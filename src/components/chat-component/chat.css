@@ -1,0 +1,14 @@
+.chat {
+    flex: 0.7;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.chat-header > div > * {
+    align-items: center;
+}
