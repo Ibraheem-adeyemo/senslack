@@ -1,0 +1,25 @@
+.chat-message {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.chat-message > img {
+    width: 60px;
+    height: 50px;
+    /* object-fit: contain; */
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid skyblue;
+    padding: 1px;
+}
+
+.message-time-stamp {
+    color: rgb(170, 169, 169);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.message-info {
+    padding-left: 10px;
+}
