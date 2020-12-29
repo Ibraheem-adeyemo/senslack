@@ -22,14 +22,12 @@ const Chat = () => {
         }
     }, [roomId]);
 
-    console.log(roomMessages, 'room messages');
-
     return (
         <div className="chat">
             <div className="chat-header">
                 <div className="chat-header-left">
                     <h4 className="chat-channel-name">
-                        <strong># {roomDetails?.name}</strong>
+                        <strong># general</strong>
                         <StarboarderIcon />
                     </h4>
                 </div>
@@ -41,7 +39,6 @@ const Chat = () => {
             </div>
             <div className="chat-messages">
             {roomMessages?.map((roomMessage: any, i: number) => {
-                console.log(roomMessage)
                 return <div key={i}>
                     <ChatMessage message={roomMessage.message} timestamp={roomMessage.timestamp} user={roomMessage.user} userImage={roomMessage.userImage} />
                 </div>
